@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -19,7 +20,10 @@ public class PlayerScript : MonoBehaviour
     public float moveSpeed;
     public float jumpForce;
 
-    
+    private int starsCount = 0;
+    public Text starsText;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,6 +48,8 @@ public class PlayerScript : MonoBehaviour
         if (other.gameObject.CompareTag("Pickup"))
         {
             other.gameObject.SetActive(false);
+            starsCount++;
+            starsText.text = starsCount.ToString();
         }
     }
     
