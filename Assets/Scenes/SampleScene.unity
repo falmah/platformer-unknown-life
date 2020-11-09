@@ -678,6 +678,7 @@ MonoBehaviour:
     m_Bits: 256
   moveSpeed: 2.5
   jumpForce: 7
+  animator: {fileID: 364704914}
   starsText: {fileID: 1286256674}
 --- !u!95 &364704914
 Animator:

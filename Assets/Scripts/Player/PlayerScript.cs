@@ -20,6 +20,8 @@ public class PlayerScript : MonoBehaviour
     public float moveSpeed;
     public float jumpForce;
 
+    public Animator animator;
+
     private int starsCount = 0;
     public Text starsText;
 
@@ -41,6 +43,8 @@ public class PlayerScript : MonoBehaviour
             transform.localScale = newScale;
         }
         //cameraMoving();
+
+        animator.SetFloat("Speed", Mathf.Abs(direction));
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -86,6 +90,7 @@ public class PlayerScript : MonoBehaviour
             isJumping = true;
             jumpTimeCounter = jumpTime;
             rb.velocity = Vector2.up * jumpForce;
+            animator.SetBool("IsJumping", true);
         }
 
         if (Input.GetKey(KeyCode.W)) 
@@ -100,6 +105,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.W))
         {
             isJumping = false;
+            animator.SetBool("IsJumping", false);
         }
     }
 }
