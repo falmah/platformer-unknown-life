@@ -11,12 +11,17 @@ public class LifeManagement : MonoBehaviour
     public int lifeCount = 3;
     public Text lifeText;
     public Text gameOverText;
+    public GameObject myObject;
     //public Button newGameBtn;
 
     void Start()
     {
+        //GameObject lifeGameObject = MonoBehaviour.Instantiate(Resources.Load<GameObject>("Prefubs/Lifes_count"));
+        lifeText = GameObject.Find("Lifes_count").GetComponent<Text>();
         lifeText.text = lifeCount.ToString();
-        gameOverText.enabled = false;
+        //GameObject gameGameObject = Instantiate(Resources.Load<GameObject>("Prefubs/game_over_txt"));
+        gameOverText = GameObject.Find("game_over_txt").GetComponent<Text>();
+        gameOverText.enabled = false;   
         //newGameBtn.enabled = false;
     }
 
@@ -25,7 +30,7 @@ public class LifeManagement : MonoBehaviour
         deathCheck();
     }
 
-    void respawn()
+    public void respawn()
     {
         if (lifeCount > 0)
         {

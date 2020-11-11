@@ -7,8 +7,12 @@ public class FollowScript : MonoBehaviour
 
     public Transform player;
     public Vector3 offset;
+    public GameObject myObject;
     public float delay;
 
+    void Start()
+    {
+    }
     // Update is called once per frame
     void FixedUpdate()
     {

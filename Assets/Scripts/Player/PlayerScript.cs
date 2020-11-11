@@ -10,7 +10,7 @@ public class PlayerScript : MonoBehaviour
     private BoxCollider2D boxCollider;
     private float jumpTimeCounter;
     private bool isGrounded;
-    private bool isJumping;
+    public bool isJumping;
     private bool positionChanged;
 
     public float jumpTime;
@@ -19,10 +19,12 @@ public class PlayerScript : MonoBehaviour
     public LayerMask whatIsGround;
     public float moveSpeed;
     public float jumpForce;
+    public GameObject myObject;
+        
+    public int starsCount = 0;
 
     public Animator animator;
 
-    private int starsCount = 0;
     public Text starsText;
 
 
@@ -31,6 +33,7 @@ public class PlayerScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         boxCollider = GetComponent<BoxCollider2D>();
+        starsText = GameObject.Find("Star_count").GetComponent<Text>();
     }
 
     void FixedUpdate() 
@@ -47,7 +50,7 @@ public class PlayerScript : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(direction));
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Pickup"))
         {
@@ -79,13 +82,18 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Jump();
+        if (Input.GetKey(KeyCode.W)) Jump();
+        if (Input.GetKeyUp(KeyCode.W))
+        {
+            isJumping = false;
+            animator.SetBool("IsJumping", false);
+        }
     }
 
-    void Jump()
+    public void Jump()
     {
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
-        if (isGrounded && Input.GetKeyDown(KeyCode.W))
+        if (isGrounded)
         {
             isJumping = true;
             jumpTimeCounter = jumpTime;
@@ -93,20 +101,13 @@ public class PlayerScript : MonoBehaviour
             animator.SetBool("IsJumping", true);
         }
 
-        if (Input.GetKey(KeyCode.W)) 
-        {
+
             if (jumpTimeCounter > 0 && isJumping)
             {
                 rb.velocity = Vector2.up * jumpForce;
                 jumpTimeCounter -= Time.deltaTime;
             }
-        }
-
-        if (Input.GetKeyUp(KeyCode.W))
-        {
-            isJumping = false;
-            animator.SetBool("IsJumping", false);
-        }
+        
     }
 }
 
