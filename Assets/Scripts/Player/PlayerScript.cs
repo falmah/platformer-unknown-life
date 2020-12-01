@@ -2,7 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class PlayerScript : MonoBehaviour
 {
@@ -21,9 +21,6 @@ public class PlayerScript : MonoBehaviour
     public float jumpForce;
 
     public Animator animator;
-
-    private int starsCount = 0;
-    public Text starsText;
 
 
     // Start is called before the first frame update
@@ -45,16 +42,6 @@ public class PlayerScript : MonoBehaviour
         //cameraMoving();
 
         animator.SetFloat("Speed", Mathf.Abs(direction));
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Pickup"))
-        {
-            other.gameObject.SetActive(false);
-            starsCount++;
-            starsText.text = starsCount.ToString();
-        }
     }
     
     void cameraMoving()
@@ -85,7 +72,7 @@ public class PlayerScript : MonoBehaviour
     void Jump()
     {
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
-        if (isGrounded && Input.GetKeyDown(KeyCode.W))
+        if (isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
             isJumping = true;
             jumpTimeCounter = jumpTime;
@@ -93,7 +80,7 @@ public class PlayerScript : MonoBehaviour
             animator.SetBool("IsJumping", true);
         }
 
-        if (Input.GetKey(KeyCode.W)) 
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) 
         {
             if (jumpTimeCounter > 0 && isJumping)
             {
@@ -102,8 +89,9 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.W) || Input.GetKeyUp(KeyCode.UpArrow))
         {
+            
             isJumping = false;
             animator.SetBool("IsJumping", false);
         }
