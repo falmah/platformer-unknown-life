@@ -72,6 +72,10 @@ public class PlayerScript : MonoBehaviour
     void Jump()
     {
         isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+        if (isGrounded && jumpTimeCounter<=0)
+        {
+            animator.SetBool("IsJumping", false);
+        }
         if (isGrounded && (Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)))
         {
             isJumping = true;
