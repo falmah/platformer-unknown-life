@@ -712,7 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 364704909}
-  lifeCount: 1
+  lifeCount: 5
   lifeText: {fileID: 1951554988}
   gameOverText: {fileID: 408938666}
 --- !u!1 &365411940
