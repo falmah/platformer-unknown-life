@@ -45,7 +45,7 @@ namespace Tests
             game_info.respawn();
             Assert.AreEqual(true, game_info.gameOverText.enabled);
         }
-
+/*
         [Test]
         public void PickUpStarCheck() 
         {
@@ -64,5 +64,6 @@ namespace Tests
             yield return new WaitForSeconds(0.1f);
             Assert.AreEqual(true, game.isJumping);
         }
+*/
     }
 }
