@@ -5,10 +5,14 @@ using UnityEngine.UI;
 
 public class StarsManagement : MonoBehaviour
 {
-    private int starsCount = 0;
+    public int starsCount = 0;
     public Text starsText;
 
-    void OnTriggerEnter2D(Collider2D other)
+    void Start()
+    {
+        starsText = GameObject.Find("Star_count").GetComponent<Text>();
+    }
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Pickup"))
         {

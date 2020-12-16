@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1366
     height: 695
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 5}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -41,10 +41,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 278
-    height: 271
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 343
+    height: 272
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -68,13 +68,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 374
+    y: 373
     width: 1078
-    height: 271
-  m_MinSize: {x: 332, y: 271}
-  m_MaxSize: {x: 14002, y: 10021}
+    height: 272
+  m_MinSize: {x: 333, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 93
+  controlID: 142
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -90,10 +90,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 278
+    x: 343
     y: 0
-    width: 800
-    height: 271
+    width: 735
+    height: 272
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 15}
@@ -198,9 +198,9 @@ MonoBehaviour:
     width: 1366
     height: 645
   m_MinSize: {x: 678, y: 492}
-  m_MaxSize: {x: 18002, y: 14042}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 17
+  controlID: 39
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -222,10 +222,10 @@ MonoBehaviour:
     y: 0
     width: 1078
     height: 645
-  m_MinSize: {x: 403, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 402, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 18
+  controlID: 40
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -246,11 +246,11 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1078
-    height: 374
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    height: 373
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 19
+  controlID: 41
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,9 +269,9 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 203
-    height: 374
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+    height: 373
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -287,7 +287,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: GameView
+  m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -295,17 +295,17 @@ MonoBehaviour:
     x: 203
     y: 0
     width: 875
-    height: 374
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 16}
+    height: 373
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
   - {fileID: 16}
   - {fileID: 19}
   - {fileID: 20}
-  m_Selected: 1
-  m_LastSelected: 3
+  m_Selected: 0
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,8 +325,8 @@ MonoBehaviour:
     y: 0
     width: 288
     height: 645
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 22}
   m_Panes:
   - {fileID: 22}
@@ -353,27 +353,27 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 447
-    width: 277
-    height: 250
+    y: 446
+    width: 342
+    height: 251
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 162
-    splitterInitialOffset: 221
+    ID: 182
+    splitterInitialOffset: 194
     currentActiveSplitter: -1
     realSizes:
-    - 148
-    - 32
+    - 103
+    - 78
     relativeSizes:
-    - 0.82608694
-    - 0.17391306
+    - 0.5664207
+    - 0.43357933
     minSizes:
     - 32
     - 32
     maxSizes:
     - 0
     - 0
-    lastTotalSize: 180
+    lastTotalSize: 181
     splitSize: 6
     xOffset: 0
     m_Version: 1
@@ -390,7 +390,7 @@ MonoBehaviour:
       name: Platformer
       fullName: Platformer
       resultStatus: 1
-      duration: 1.2234846
+      duration: 0.1047028
       messages: 
       output: 
       stacktrace: 
@@ -401,12 +401,12 @@ MonoBehaviour:
       categories: []
       parentId: 
       parentUniqueId: 
-    - id: 1006
+    - id: 1007
       uniqueId: '[Tests.dll][suite]'
       name: Tests.dll
-      fullName: D:/My_games/platformer-unknown-life/Library/ScriptAssemblies/Tests.dll
+      fullName: D:/platformer-unknown-life/Library/ScriptAssemblies/Tests.dll
       resultStatus: 1
-      duration: 1.1394225
+      duration: 0.062517
       messages: 
       output: 
       stacktrace: 
@@ -417,28 +417,12 @@ MonoBehaviour:
       categories: []
       parentId: 1000
       parentUniqueId: '[Platformer][suite]'
-    - id: 1007
+    - id: 1008
       uniqueId: Tests.dll/[Tests][suite]
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 1.1247537
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-      categories: []
-      parentId: 1006
-      parentUniqueId: '[Tests.dll][suite]'
-    - id: 1001
-      uniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
-      name: PlayerTest
-      fullName: Tests.PlayerTest
-      resultStatus: 1
-      duration: 1.1101696
+      duration: 0.0483659
       messages: 
       output: 
       stacktrace: 
@@ -448,13 +432,80 @@ MonoBehaviour:
       isSuite: 1
       categories: []
       parentId: 1007
+      parentUniqueId: '[Tests.dll][suite]'
+    - id: 1001
+      uniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
+      name: PlayerTest
+      fullName: Tests.PlayerTest
+      resultStatus: 1
+      duration: 0.0440994
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 1
+      categories: []
+      parentId: 1008
       parentUniqueId: Tests.dll/[Tests][suite]
+    - id: 1006
+      uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.CheckEnemyPunch]
+      name: CheckEnemyPunch
+      fullName: Tests.PlayerTest.CheckEnemyPunch
+      resultStatus: 1
+      duration: 0.0192509
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
+    - id: 1005
+      uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.CheckJumpState]
+      name: CheckJumpState
+      fullName: Tests.PlayerTest.CheckJumpState
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
     - id: 1003
       uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.GameOverCheck]
       name: GameOverCheck
       fullName: Tests.PlayerTest.GameOverCheck
-      resultStatus: 1
-      duration: 0.1048379
+      resultStatus: 0
+      duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
+    - id: 1004
+      uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.PickUpStarCheck]
+      name: PickUpStarCheck
+      fullName: Tests.PlayerTest.PickUpStarCheck
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -470,8 +521,8 @@ MonoBehaviour:
       uniqueId: Tests.dll/Tests/PlayerTest/[Tests][Tests.PlayerTest.RespawnPositionCheck]
       name: RespawnPositionCheck
       fullName: Tests.PlayerTest.RespawnPositionCheck
-      resultStatus: 1
-      duration: 0.007018
+      resultStatus: 0
+      duration: 0
       messages: 
       output: 
       stacktrace: 
@@ -483,12 +534,12 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests.dll/Tests/[Tests][Tests.PlayerTest][suite]
-    m_ResultText: 
+    m_ResultText: CheckEnemyPunch (0,019s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      scrollPos: {x: 0, y: 26}
+      m_SelectedIDs: bd8c2f17
+      m_LastClickedID: 388992189
       m_ExpandedIDs: 74de8b93fd4c0debe557abf78359db41ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -508,7 +559,7 @@ MonoBehaviour:
         m_ClientGUIView: {fileID: 0}
       m_SearchString: 
     m_TestRunnerUIFilter:
-      PassedHidden: 0
+      PassedHidden: 1
       FailedHidden: 0
       NotRunHidden: 0
       m_SearchString: 
@@ -586,10 +637,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 278
-    y: 447
-    width: 798
-    height: 250
+    x: 343
+    y: 446
+    width: 733
+    height: 251
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -611,14 +662,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Scripts/Mechanics
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\User\Documents\unity\platformer-unknown-life
+  m_LastProjectPath: C:\Users\User\Downloads\Telegram Desktop\platformer-unknown-life
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c6430000
-    m_LastClickedID: 17350
-    m_ExpandedIDs: 00000000503e0000523e0000
+    scrollPos: {x: 0, y: 13}
+    m_SelectedIDs: 7a3e0000
+    m_LastClickedID: 15994
+    m_ExpandedIDs: 00000000623e0000643e0000663e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -646,7 +697,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000503e0000523e0000543e0000
+    m_ExpandedIDs: 00000000623e0000643e0000663e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -725,7 +776,7 @@ MonoBehaviour:
     x: 203
     y: 73
     width: 873
-    height: 353
+    height: 352
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -760,7 +811,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -770,22 +821,22 @@ MonoBehaviour:
       x: 0
       y: 21
       width: 873
-      height: 332
-    m_Scale: {x: 0.3074074, y: 0.3074074}
-    m_Translation: {x: 436.49997, y: 166}
+      height: 331
+    m_Scale: {x: 0.30648148, y: 0.30648148}
+    m_Translation: {x: 436.5, y: 165.5}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -1419.9397
+      x: -1424.2296
       y: -540
-      width: 2839.8794
+      width: 2848.4592
       height: 1080
     m_MinimalGUI: 1
-  m_defaultScale: 0.3074074
-  m_LastWindowPixelSize: {x: 873, y: 353}
+  m_defaultScale: 0.30648148
+  m_LastWindowPixelSize: {x: 873, y: 352}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -814,14 +865,14 @@ MonoBehaviour:
     x: 0
     y: 73
     width: 202
-    height: 353
+    height: 352
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 543c0000
-      m_LastClickedID: 15444
-      m_ExpandedIDs: 46fbffff543c0000
+      m_SelectedIDs: 4e3c0000
+      m_LastClickedID: 15438
+      m_ExpandedIDs: 28fbffff34fbffff9a3c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -868,7 +919,7 @@ MonoBehaviour:
     x: 203
     y: 73
     width: 873
-    height: 353
+    height: 352
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
   m_WindowGUID: cc27987af1a868c49b0894db9c0f5429
@@ -881,9 +932,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -6.014718, y: -0.047029737, z: -3.101057}
+    m_Target: {x: 4.0346413, y: 2.4201615, z: -4.7450523}
     speed: 2
-    m_Value: {x: -6.014718, y: -0.047029737, z: -3.101057}
+    m_Value: {x: 3.9807112, y: 2.4236014, z: -4.742128}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -934,9 +985,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1.5054151
+    m_Target: 0.77478766
     speed: 2
-    m_Value: 1.5054151
+    m_Value: 0.811296
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -988,7 +1039,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 15444
+  m_LastSelectedObjectID: -13624
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1070,10 +1121,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 278
-    y: 447
-    width: 798
-    height: 250
+    x: 385.6
+    y: 496.80002
+    width: 824.4
+    height: 286.59998
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &22
 MonoBehaviour:
@@ -1107,7 +1158,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 1150
+  m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:

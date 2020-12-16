@@ -16,7 +16,7 @@ public class MovementController : MonoBehaviour
 
     private float jumpTimeCounter;
     private bool isGrounded;
-    private bool isJumping;
+    public bool isJumping;
 
     public float jumpTime;
     public float checkRadius;
@@ -54,7 +54,7 @@ public class MovementController : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
     }
 
-    void UpdateJump()
+    public void UpdateJump()
     {
         if (isGrounded && jumpTimeCounter <= 0)
         {
@@ -104,7 +104,7 @@ public class MovementController : MonoBehaviour
         boxCollider = GetComponent<BoxCollider2D>();
     }
 
-    void Update()
+    void FixedUpdate()
     {
         UpdateMovement();
     }
