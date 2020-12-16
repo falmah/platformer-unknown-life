@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 261181324}
   - component: {fileID: 261181323}
   - component: {fileID: 261181322}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -737,7 +737,7 @@ GameObject:
   - component: {fileID: 408938665}
   - component: {fileID: 408938667}
   - component: {fileID: 408938666}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: game_over_txt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -897,7 +897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505168776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 13.96, y: 1.71, z: 65.15726}
+  m_LocalPosition: {x: 16.03, y: 4.72, z: 65.15726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 650145924}
@@ -1465,7 +1465,7 @@ GameObject:
   - component: {fileID: 1191401681}
   - component: {fileID: 1191401683}
   - component: {fileID: 1191401682}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Heart_Img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1540,7 +1540,7 @@ GameObject:
   - component: {fileID: 1262847426}
   - component: {fileID: 1262847428}
   - component: {fileID: 1262847427}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Star_Img
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1813,7 +1813,7 @@ GameObject:
   - component: {fileID: 1286256673}
   - component: {fileID: 1286256675}
   - component: {fileID: 1286256674}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Star_count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1907,7 +1907,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1337042756}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 17.56, y: 4.67, z: 65.15726}
+  m_LocalPosition: {x: 18.92, y: 4.7, z: 65.15726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 650145924}
@@ -2575,7 +2575,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1604276337
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -53745,7 +53745,7 @@ GameObject:
   - component: {fileID: 1951554987}
   - component: {fileID: 1951554989}
   - component: {fileID: 1951554988}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Lifes_count
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54110,6 +54110,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2045331569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7846559525639825151, guid: b7c4dc41a44e2a7408522a644e78e9a1, type: 3}
+  m_PrefabInstance: {fileID: 7846559526342136307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2045331574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045331569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35e8c72119e57e64fb792d4bd0b05ac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  feetPos: {fileID: 0}
+  moveSpeed: 1
+  isJumping: 0
+  jumpTime: 0
+  checkRadius: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  jumpForce: 0
+  jumpable: 0
+  animator: {fileID: 0}
 --- !u!1001 &7846559526342136307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54117,13 +54145,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 778496259}
     m_Modifications:
+    - target: {fileID: 972719968702836377, guid: b7c4dc41a44e2a7408522a644e78e9a1, type: 3}
+      propertyPath: leftcount
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846559525639825123, guid: b7c4dc41a44e2a7408522a644e78e9a1, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1394547095
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846559525639825123, guid: b7c4dc41a44e2a7408522a644e78e9a1, type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846559525639825148, guid: b7c4dc41a44e2a7408522a644e78e9a1, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7846559525639825148, guid: b7c4dc41a44e2a7408522a644e78e9a1, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7846559525639825150, guid: b7c4dc41a44e2a7408522a644e78e9a1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7834
+      value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 7846559525639825150, guid: b7c4dc41a44e2a7408522a644e78e9a1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.0717
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7846559525639825150, guid: b7c4dc41a44e2a7408522a644e78e9a1, type: 3}
       propertyPath: m_LocalPosition.z

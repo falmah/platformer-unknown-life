@@ -36,7 +36,8 @@ public class MovementController : MonoBehaviour
 
     private void IsGrounded()
     {
-        isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
+        if(feetPos != null)
+            isGrounded = Physics2D.OverlapCircle(feetPos.position, checkRadius, whatIsGround);
     }
 
     private void UpdateMovement()
@@ -51,7 +52,8 @@ public class MovementController : MonoBehaviour
             var newScale = new Vector3(direction, 1, 1);
             instance.transform.localScale = newScale;
         }
-        animator.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
+        if(animator != null)
+            animator.SetFloat("Speed", Mathf.Abs(Input.GetAxisRaw("Horizontal")));
     }
 
     public void UpdateJump()
@@ -92,6 +94,7 @@ public class MovementController : MonoBehaviour
 
     public void MovementFSM()
     {
+        UpdateMovement();
         IsGrounded();
         if (jumpable)
             UpdateJump();
